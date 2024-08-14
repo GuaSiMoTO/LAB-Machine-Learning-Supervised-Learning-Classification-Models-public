@@ -80,6 +80,21 @@ This initial inspection is crucial as it sets the stage for the next steps of da
 
   - `target` (This is the target variable that indicates which class each wine sample belongs to: 0, 1, or 2).
 
+## Iteration 2: Training and Evaluation of Models
+- Train and evaluate a Logistic Regression model.
+- Train and evaluate a K-Nearest Neighbors (K-NN) model.
+- Train and evaluate a Decision Tree model.
+- Train and evaluate a Support Vector Machine (SVM) model.
+- Train and evaluate a Random Forest model.
+
+## Iteration 3: Model Comparison
+- Compare the trained models in terms of accuracy using a bar chart to visualize the results.
+
+## Iteration 4: Cross-Validation
+- Perform cross-validation for each model, evaluating their mean accuracy and standard deviation.
+
+## Iteration 5: Conclusions
+- Analyze and discuss which model is the most suitable for the Wine dataset classification task based on the obtained metrics.
 
 
 ## Submission
