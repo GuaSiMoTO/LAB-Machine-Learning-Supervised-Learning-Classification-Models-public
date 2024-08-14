@@ -59,7 +59,7 @@ from sklearn.datasets import load_wine
 
 ```
 
-**NOTE**: Remember import librraies.
+**NOTE**: Remember import libraries.
 
 ### Inspect the dataset
 - Display the basic information about the dataset, such as the number of rows, columns, and data types of each column.
