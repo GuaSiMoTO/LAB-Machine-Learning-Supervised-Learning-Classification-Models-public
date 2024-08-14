@@ -3,9 +3,9 @@
 ![Image](https://user-images.githubusercontent.com/970858/63474771-d6734700-c469-11e9-83bb-9429da563909.png)
 
 ## Introduction
-Welcome to the Supervised Learning Classification Models lab! In this lab, you will apply various classification models to a real-world dataset. As a data scientist at a marketing firm, your task is to analyze customer data and predict whether a customer will make a purchase based on several features.
+Welcome to the Supervised Learning Classification Models lab! Imagine you are a data scientist at a winery, and your manager has asked you to predict the quality of a wine based on several features, such as acidity, alcohol level, and pH. In this lab, you will apply and compare different classification models to determine which one performs the best on this wine dataset.
 
-You will work with a dataset that includes customer information and their purchase behavior. Your goal is to apply different classification models, evaluate their performance, and select the best model for predicting customer purchases.
+You will work with a dataset that includes various attributes of wines and their quality ratings. Your goal is to evaluate different classification models, assess their performance, and select the best model for predicting wine quality.
 
 ## Initial Setup
 ### Requirements
