@@ -55,7 +55,7 @@ Using pandas, we will load the provided CSV file. This will give us an initial g
 ```python
 from sklearn.datasets import load_wine
 
-# Load the digits dataset
+# Load the load_wine dataset
 
 ```
 
