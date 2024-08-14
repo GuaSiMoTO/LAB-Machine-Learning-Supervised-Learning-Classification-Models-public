@@ -56,8 +56,10 @@ Using pandas, we will load the provided CSV file. This will give us an initial g
 from sklearn.datasets import load_wine
 
 # Load the digits dataset
-wine = load_wine()
+
 ```
+
+**NOTE**: Remember import librraies.
 
 ### Inspect the dataset
 - Display the basic information about the dataset, such as the number of rows, columns, and data types of each column.
