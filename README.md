@@ -52,6 +52,13 @@ Now that you've set up your environment, let's dive into the heart of our data a
 ### Load the dataset
 Using pandas, we will load the provided CSV file. This will give us an initial glimpse into the dataset, including the columns and the first few rows of data.
 
+```python
+from sklearn.datasets import load_wine
+
+# Load the digits dataset
+wine = load_wine()
+```
+
 ### Inspect the dataset
 - Display the basic information about the dataset, such as the number of rows, columns, and data types of each column.
 - Use descriptive statistics to understand the distribution of numerical and categorical variables.
