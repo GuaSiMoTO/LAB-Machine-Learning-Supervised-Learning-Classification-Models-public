@@ -118,10 +118,10 @@ Then create a Pull Request!!
 
 ## Additional Resources
 
-- [Pandas Documentation](https://pandas.pydata.org/pandas-docs/stable/)
-- [Matplotlib Documentation](https://matplotlib.org/)
-- [Seaborn Documentation](https://seaborn.pydata.org/)
-- [Ploty Documentation](https://plotly.com/python/).
-- [Mann-Whitney U test - Scipy Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.mannwhitneyu.html).
+- [ ]()
+- [ ](/)
+- [ ]()
+- [ ]().
+- [ ]().
 
 ![happy_coding](https://user-images.githubusercontent.com/970858/63899010-c23fc480-c9ea-11e9-84a2-542907e42362.png)
