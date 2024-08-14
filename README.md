@@ -56,39 +56,29 @@ Using pandas, we will load the provided CSV file. This will give us an initial g
 - Display the basic information about the dataset, such as the number of rows, columns, and data types of each column.
 - Use descriptive statistics to understand the distribution of numerical and categorical variables.
 
-[describe - Pandas Documentation](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html)
-
 This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
 
-## Iteration 2: Data Cleaning
-With a solid understanding of the dataset's structure, it's time to focus on cleaning the data. Data cleaning ensures that the dataset is accurate, consistent, and ready for analysis. This step is essential to avoid misleading results and ensure that your insights are based on high-quality data.
+## Iteration 1: Dataset Splitting
 
+- **Features (`X`)**: Select all columns from the dataset that contain information about the chemical properties of the wine. This includes the following variables:
 
+  - `alcohol`
+  - `malic_acid`
+  - `ash`
+  - `alcalinity_of_ash`
+  - `magnesium`
+  - `total_phenols`
+  - `flavanoids`
+  - `nonflavanoid_phenols`
+  - `proanthocyanins`
+  - `color_intensity`
+  - `hue`
+  - `od280/od315_of_diluted_wines`
+  - `proline`
 
-## Iteration 3: Data Visualization with Matplotlib and Seaborn
-Having cleaned the data, you're now ready to explore it visually. Visualization is a powerful tool for uncovering patterns, trends, and anomalies in the data. In this iteration, you'll create various plots to get a better understanding of the dataset.
+- **Target Variable (`y`)**: Select the column that corresponds to the wine class, which identifies the category of each wine into one of the three possible classes.
 
-
-
-
-## Iteration 4: Advanced Visualizations and Insights
-
-
-## Iteration 5:  
- 
-Standardizing numerical variables is an important step, especially when preparing data for machine learning models. This iteration focuses on scaling your data to ensure that all features contribute equally to the analysis.
-
-
-
-## Iteration 6: Hypothesis Testing
-
-Hypothesis testing allows you to make statistical inferences about the data. In this iteration, you'll compare variables between groups to determine if observed differences are statistically significant.
-
-
-
-## Iteration 7: Dimensionality Reduction with PCA
-
-In this iteration, you'll apply Principal Component Analysis (PCA) to reduce the dimensionality of the dataset. This technique helps simplify the dataset by transforming it into a lower-dimensional space while retaining the most important features.
+  - `target` (This is the target variable that indicates which class each wine sample belongs to: 0, 1, or 2).
 
 
 
