@@ -14,7 +14,7 @@ Start by forking the provided GitHub repository to your account and then clone i
 - Clone this repo into your code/labs folder.
 
 ### Scenario
-Imagine you are a data scientist at a marketing firm. Your manager has asked you to predict whether a customer will make a purchase based on several features, such as age, income, and browsing behavior. Your task is to apply and compare different classification models to determine which one performs the best on this dataset.
+Imagine you are a data scientist at a winery. Your manager has asked you to predict the quality of a wine based on several features, such as acidity, alcohol level, and pH. Your task is to apply and compare different classification models to determine which one performs the best on this wine dataset.
 
 ### Starter Code
 You have to solve the different problems in the LAB-Classification-Models.ipynb notebook.
