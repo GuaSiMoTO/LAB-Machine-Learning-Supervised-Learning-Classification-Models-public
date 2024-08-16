@@ -2,49 +2,42 @@
 
 ![Image](https://user-images.githubusercontent.com/970858/63474771-d6734700-c469-11e9-83bb-9429da563909.png)
 
-## Introduction
-Welcome to the Supervised Learning Classification Models lab! Imagine you are a data scientist at a winery, and your manager has asked you to predict the quality of a wine based on several features, such as acidity, alcohol level, and pH. In this lab, you will apply and compare different classification models to determine which one performs the best on this wine dataset.
+## Wine Quality Prediction
+
+Introduction
+In this project, we will walk through a comprehensive Machine Learning workflow using a wine quality dataset. Our goal is to build and compare different supervised classification models to predict wine quality based on several features such as acidity, alcohol level, and pH. We will explore and evaluate models including Logistic Regression, K-Nearest Neighbors, Decision Trees, Support Vector Machines, and Random Forest. Additionally, we will apply cross-validation techniques to optimize the model performance.
 
 You will work with a dataset that includes various attributes of wines and their quality ratings. Your goal is to evaluate different classification models, assess their performance, and select the best model for predicting wine quality.
 
 ## Initial Setup
+
 ### Requirements
 Start by forking the provided GitHub repository to your account and then clone it locally. This will be your workspace for completing the lab exercises.
 - [Learn how to fork this repo](https://docs.github.com/en/get-started/exploring-projects-on-github/contributing-to-a-project)
 - Clone this repo into your code/labs folder.
 
-### Scenario
-Imagine you are a data scientist at a winery. Your manager has asked you to predict the quality of a wine based on several features, such as acidity, alcohol level, and pH. Your task is to apply and compare different classification models to determine which one performs the best on this wine dataset.
-
-### Starter Code
-You have to solve the different problems in the LAB-Classification-Models.ipynb notebook.
-
-1. Open your terminal and navigate to the `cloned-repo` directory:
-
+### Setup Instructions
+To run the notebook and reproduce the results, follow these steps:
+1. Clone the repository:
     ```bash
-    cd path/to/your/cloned-repo/
+    git clone https://github.com/codeskills-ai/LAB-Machine-Learning-Supervised-Models-Classification-Models.git
+    cd LAB-Machine-Learning-Supervised-Models-Classification-Models
     ```
 
-2. Launch Jupyter Notebook:
+2. Create a virtual environment and install the required packages:
 
     ```bash
-    jupyter lab
+    pip install -r requirements.txt
     ```
 
-3. In the Jupyter Notebook interface, open the `LAB-Exploratory-Data-Analysis.ipynb` file.
+3. Start Jupyter Notebook:
+   ```bash
+   jupyter notebook
+   ``` 
 
 To test that everything is set up correctly, run the first cell in the notebook. This cell usually contains import statements and initial setup code. If it runs without errors, you are ready to start solving the exercises.
 
 You can write and execute your code in the provided cells within the notebook. Any outputs, including print statements and visualizations, will be displayed directly in the notebook, making it easy to debug and verify your solutions.
-
-
-### Iteration 0: Install Dependencies
-
-Make sure you have all the necessary libraries installed by using the `requirements.txt` file provided. You can install the dependencies with the following command:
-
-```bash
-pip install -r requirements.txt
-```
 
 ## Iteration 1: Load and Inspect the Dataset
 Now that you've set up your environment, let's dive into the heart of our data analysis task. Our first step is to load and inspect the dataset, which is crucial for understanding its structure and contents. This foundational step will help you get acquainted with the data, allowing you to identify what needs to be cleaned or further explored.
@@ -67,10 +60,27 @@ from sklearn.datasets import load_wine
 
 This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
 
-## Iteration 1: Dataset Splitting
+## Workflow
 
-- **Features (`X`)**: Select all columns from the dataset that contain information about the chemical properties of the wine. This includes the following variables:
+#### Iteration 1: Data Load
 
+Load the Wine Quality dataset, which contains various attributes of wines and their quality ratings. Use Python libraries to load the dataset into a pandas DataFrame for further analysis.
+
+- Import the necessary Python libraries: `pandas` and `sklearn.datasets`.
+- Load the `load_wine` dataset, which includes data on wine features and quality.
+- Display the first few rows of the dataset to understand its structure and the type of data it contains.
+
+#### Iteration 2: Data Exploration
+
+In this section, we will explore the dataset visually to understand the distribution of the target variable (`target`) and its relationship with other features.
+
+- Import the necessary visualization libraries: `seaborn` and `matplotlib.pyplot`.
+- Visualize the distribution of the target variable (`target`) using a histogram.
+- Use a pairplot to generate scatter plots for some features (e.g., `alcohol`, `malic_acid`, `ash`) against the target variable (`target`).
+
+#### Iteration 3: Feature Selection
+
+- **Feature Selection**: Select relevant features from the dataset that will be used for model training. Features include chemical properties such as:
   - `alcohol`
   - `malic_acid`
   - `ash`
@@ -84,26 +94,35 @@ This initial inspection is crucial as it sets the stage for the next steps of da
   - `hue`
   - `od280/od315_of_diluted_wines`
   - `proline`
+  
+- **Target Variable**: The target variable `target` indicates the quality class of the wine, categorized into three classes: 0, 1, or 2.
 
-- **Target Variable (`y`)**: Select the column that corresponds to the wine class, which identifies the category of each wine into one of the three possible classes.
+#### Iteration 4: Data Splitting
 
-  - `target` (This is the target variable that indicates which class each wine sample belongs to: 0, 1, or 2).
+- **Split the Data**: Split the dataset into training and testing sets using `train_test_split` from `sklearn.model_selection`. The split ensures that the model is trained on one portion of the data and tested on a separate portion to evaluate its performance.
 
-## Iteration 2: Training and Evaluation of Models
-- Train and evaluate a Logistic Regression model.
-- Train and evaluate a K-Nearest Neighbors (K-NN) model.
-- Train and evaluate a Decision Tree model.
-- Train and evaluate a Support Vector Machine (SVM) model.
-- Train and evaluate a Random Forest model.
+#### Iteration 5: Train and Evaluate Classification Models
 
-## Iteration 3: Model Comparison
-- Compare the trained models in terms of accuracy using a bar chart to visualize the results.
+Train and evaluate various classification models on the wine dataset to predict the quality class.
 
-## Iteration 4: Cross-Validation
-- Perform cross-validation for each model, evaluating their mean accuracy and standard deviation.
+- **Logistic Regression**: Train and evaluate a Logistic Regression model.
+- **K-Nearest Neighbors (K-NN)**: Train and evaluate a K-NN model.
+- **Decision Tree**: Train and evaluate a Decision Tree model.
+- **Support Vector Machine (SVM)**: Train and evaluate an SVM model.
+- **Random Forest**: Train and evaluate a Random Forest model.
 
-## Iteration 5: Conclusions
-- Analyze and discuss which model is the most suitable for the Wine dataset classification task based on the obtained metrics.
+#### Iteration 6: Model Comparison
+
+Compare the trained models in terms of accuracy. Use a bar chart to visualize the accuracy of each model to identify which one performs best.
+
+#### Iteration 7: Cross-Validation
+
+Apply cross-validation to each model to evaluate their mean accuracy and standard deviation. This step ensures the robustness of the models by testing them on different subsets of the data.
+
+#### Iteration 8: Conclusions
+
+Analyze and discuss which model is the most suitable for the wine dataset classification task based on the accuracy, cross-validation results, and overall model performance.
+
 
 
 ## Submission
