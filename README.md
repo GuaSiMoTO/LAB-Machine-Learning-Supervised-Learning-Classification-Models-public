@@ -41,7 +41,7 @@ You can write and execute your code in the provided cells within the notebook. A
 
 ## Workflow
 
-#### Iteration 1: Data Load
+### Iteration 1: Data Load
 
 Load the Wine Quality dataset, which contains various attributes of wines and their quality ratings. Use Python libraries to load the dataset into a pandas DataFrame for further analysis.
 
@@ -51,7 +51,7 @@ Load the Wine Quality dataset, which contains various attributes of wines and th
 
 **NOTE**: This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
 
-#### Iteration 2: Data Exploration
+### Iteration 2: Data Exploration
 
 In this section, we will explore the dataset visually to understand the distribution of the target variable (`target`) and its relationship with other features.
 
@@ -59,7 +59,7 @@ In this section, we will explore the dataset visually to understand the distribu
 - Visualize the distribution of the target variable (`target`) using a histogram.
 - Use a pairplot to generate scatter plots for some features (e.g., `alcohol`, `malic_acid`, `ash`) against the target variable (`target`).
 
-#### Iteration 3: Feature Selection
+### Iteration 3: Feature Selection
 
 - **Feature Selection**: Select relevant features from the dataset that will be used for model training. Features include chemical properties such as:
   - `alcohol`
@@ -78,11 +78,11 @@ In this section, we will explore the dataset visually to understand the distribu
   
 - **Target Variable**: The target variable `target` indicates the quality class of the wine, categorized into three classes: 0, 1, or 2.
 
-#### Iteration 4: Data Splitting
+### Iteration 4: Data Splitting
 
 - **Split the Data**: Split the dataset into training and testing sets using `train_test_split` from `sklearn.model_selection`. The split ensures that the model is trained on one portion of the data and tested on a separate portion to evaluate its performance.
 
-#### Iteration 5: Train and Evaluate Classification Models
+### Iteration 5: Train and Evaluate Classification Models
 
 Train and evaluate various classification models on the wine dataset to predict the quality class.
 
@@ -92,15 +92,15 @@ Train and evaluate various classification models on the wine dataset to predict 
 - **Support Vector Machine (SVM)**: Train and evaluate an SVM model.
 - **Random Forest**: Train and evaluate a Random Forest model.
 
-#### Iteration 6: Model Comparison
+### Iteration 6: Model Comparison
 
 Compare the trained models in terms of accuracy. Use a bar chart to visualize the accuracy of each model to identify which one performs best.
 
-#### Iteration 7: Cross-Validation
+### Iteration 7: Cross-Validation
 
 Apply cross-validation to each model to evaluate their mean accuracy and standard deviation. This step ensures the robustness of the models by testing them on different subsets of the data.
 
-#### Iteration 8: Conclusions
+### Iteration 8: Conclusions
 
 Analyze and discuss which model is the most suitable for the wine dataset classification task based on the accuracy, cross-validation results, and overall model performance.
 
