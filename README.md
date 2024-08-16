@@ -39,27 +39,6 @@ To test that everything is set up correctly, run the first cell in the notebook.
 
 You can write and execute your code in the provided cells within the notebook. Any outputs, including print statements and visualizations, will be displayed directly in the notebook, making it easy to debug and verify your solutions.
 
-## Iteration 1: Load and Inspect the Dataset
-Now that you've set up your environment, let's dive into the heart of our data analysis task. Our first step is to load and inspect the dataset, which is crucial for understanding its structure and contents. This foundational step will help you get acquainted with the data, allowing you to identify what needs to be cleaned or further explored.
-
-### Load the dataset
-Using pandas, we will load the provided CSV file. This will give us an initial glimpse into the dataset, including the columns and the first few rows of data.
-
-```python
-from sklearn.datasets import load_wine
-
-# Load the load_wine dataset
-
-```
-
-**NOTE**: Remember import libraries.
-
-### Inspect the dataset
-- Display the basic information about the dataset, such as the number of rows, columns, and data types of each column.
-- Use descriptive statistics to understand the distribution of numerical and categorical variables.
-
-This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
-
 ## Workflow
 
 #### Iteration 1: Data Load
@@ -69,6 +48,8 @@ Load the Wine Quality dataset, which contains various attributes of wines and th
 - Import the necessary Python libraries: `pandas` and `sklearn.datasets`.
 - Load the `load_wine` dataset, which includes data on wine features and quality.
 - Display the first few rows of the dataset to understand its structure and the type of data it contains.
+
+**NOTE**: This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
 
 #### Iteration 2: Data Exploration
 
