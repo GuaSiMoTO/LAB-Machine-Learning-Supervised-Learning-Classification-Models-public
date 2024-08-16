@@ -49,8 +49,6 @@ Load the Wine Quality dataset, which contains various attributes of wines and th
 - Load the `load_wine` dataset, which includes data on wine features and quality.
 - Display the first few rows of the dataset to understand its structure and the type of data it contains.
 
-**NOTE**: This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
-
 ### Iteration 2: Data Exploration
 
 In this section, we will explore the dataset visually to understand the distribution of the target variable (`target`) and its relationship with other features.
@@ -58,6 +56,8 @@ In this section, we will explore the dataset visually to understand the distribu
 - Import the necessary visualization libraries: `seaborn` and `matplotlib.pyplot`.
 - Visualize the distribution of the target variable (`target`) using a histogram.
 - Use a pairplot to generate scatter plots for some features (e.g., `alcohol`, `malic_acid`, `ash`) against the target variable (`target`).
+
+**NOTE**: This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
 
 ### Iteration 3: Feature Selection
 
