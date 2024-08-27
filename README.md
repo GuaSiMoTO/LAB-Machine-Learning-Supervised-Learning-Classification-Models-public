@@ -84,7 +84,7 @@ In this section, we will explore the dataset visually to understand the distribu
 
 ### Iteration 5: Train and Evaluate Classification Models
 
-Train and evaluate various classification models on the wine dataset to predict the quality class.
+Train and evaluate various classification models on the wine dataset to predict the quality class. Don't forget to calculate optimization parameters as `optimal-K`!
 
 - **Logistic Regression**: Train and evaluate a Logistic Regression model.
 - **K-Nearest Neighbors (K-NN)**: Train and evaluate a K-NN model.
