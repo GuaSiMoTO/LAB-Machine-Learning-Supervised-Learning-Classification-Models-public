@@ -105,6 +105,12 @@ Apply cross-validation to each model to evaluate their mean accuracy and standar
 
 Analyze and discuss which model is the most suitable for the wine dataset classification task based on the accuracy, cross-validation results, and overall model performance.
 
+### Bonus: Hyperparameter Tuning with GridSearch
+
+As a bonus, apply **GridSearchCV** to optimize the hyperparameters of the best-performing model from your comparisons. Use GridSearch to:
+1. Define a range of hyperparameters (e.g., `C`, `kernel` for SVM or `n_estimators`, `max_depth` for Random Forest).
+2. Perform GridSearchCV to evaluate different combinations using cross-validation.
+3. Train the model with the best hyperparameters and evaluate its performance on the test set.
 
 
 ## Submission
