@@ -77,6 +77,7 @@ In this section, we will explore the dataset visually to understand the distribu
   - `proline`
   
 - **Target Variable**: The target variable `target` indicates the quality class of the wine, categorized into three classes: 0, 1, or 2.
+- **Calculate correlation matrix**: Calculate the correlation matrix of the selected characteristics to see how they are related to each other. Reason if any of the features should be removed to reduce the complexity of the model.
 
 ### Iteration 4: Data Splitting
 
