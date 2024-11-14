@@ -54,7 +54,7 @@ Load the Wine Quality dataset, which contains various attributes of wines and th
 In this section, we will explore the dataset visually to understand the distribution of the target variable (`target`) and its relationship with other features.
 
 - Import the necessary visualization libraries: `seaborn` and `matplotlib.pyplot`.
-- Visualize the distribution of the target variable (`target`) using a histogram.
+- Visualize the distribution of the target variable (`target`) using a countplot.
 - Use a pairplot to generate scatter plots for some features (e.g., `alcohol`, `malic_acid`, `ash`) against the target variable (`target`).
 
 **NOTE**: This initial inspection is crucial as it sets the stage for the next steps of data cleaning and visualization.
